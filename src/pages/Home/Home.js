@@ -21,9 +21,11 @@ import { useState } from 'react';
      if (query){
       return navigate(`/search?q=${query}`);
      }
-   }
+   };
+   
    return (
      <div className={styles.home}>
+      
          <h1>Veja nossos posts mais recentes</h1>
          <form onSubmit={handleSubmit} className={styles.search_form}>
            <input type="text" placeholder='Ou busque por tags...' onChange={(e)=> setQuery(e.target.value)} />
